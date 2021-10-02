@@ -12,9 +12,9 @@ class open_file:
         self.f.close()
 
 
-with open_file('../test.log', 'w') as f:
+with open_file('../../test.log', 'w') as f:
     f.write('Inside "open_file" context manager')
 
-with open_file('../test.log', 'r') as f:
+with open_file('../../test.log', 'r') as f:
     print(f.readlines())
 
